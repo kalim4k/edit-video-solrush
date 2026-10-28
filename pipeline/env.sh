@@ -4,9 +4,9 @@
 ICI="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 RACINE="${SOLRUSH_RACINE:-$(dirname "$ICI")}"
 
-if [ -n "$FFMPEG_BIN" ] && [ -x "$FFMPEG_BIN/ffmpeg" ]; then
+if [ -n "${FFMPEG_BIN:-}" ] && [ -x "$FFMPEG_BIN/ffmpeg" ]; then
   FF="$FFMPEG_BIN"
-elif [ -n "$FFMPEG_BIN" ] && [ -x "$FFMPEG_BIN/ffmpeg.exe" ]; then
+elif [ -n "${FFMPEG_BIN:-}" ] && [ -x "$FFMPEG_BIN/ffmpeg.exe" ]; then
   FF="$FFMPEG_BIN"
 elif command -v ffmpeg >/dev/null 2>&1; then
   FF="$(dirname "$(command -v ffmpeg)")"
