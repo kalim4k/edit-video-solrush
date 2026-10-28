@@ -1,0 +1,36 @@
+# --- SECRET : ne doit jamais partir sur GitHub ---
+.elevenlabs_key
+*.key
+*_key
+.env
+
+# --- rushes et rendus (volumineux : ~400 Mo) ---
+SOURCES/
+SORTIE/
+
+# --- fichiers de travail du pipeline ---
+pipeline/*_tmp/
+pipeline/raw_*.txt
+pipeline/y_*.tsv
+pipeline/ac_*.tsv
+pipeline/ac_*.txt
+pipeline/st_*.tsv
+pipeline/f[av]_*.txt
+pipeline/in_*.txt
+pipeline/fx_*.txt
+pipeline/norm_*.mp4
+pipeline/vid_*.mp4
+pipeline/aud_*.wav
+pipeline/mx_*.wav
+pipeline/*.png
+
+# --- sorties de la synthèse vocale (fonction abandonnée) ---
+pipeline/[a-z]_[0-9]*.mp3
+pipeline/[a-z]_[0-9]*.wav
+pipeline/plans_voix.json
+pipeline/punch_*.json
+
+# --- divers ---
+Thumbs.db
+desktop.ini
+__pycache__/
