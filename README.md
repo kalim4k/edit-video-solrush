@@ -4,7 +4,7 @@ Chaîne de montage automatisée pour les parties de **SolRush** / WallRush (Quor
 À partir d'une capture d'écran de partie — ou directement d'un lien de rejeu — elle produit
 une vidéo verticale 1080×1920 avec un effet sonore sur chaque mur posé et des mèmes incrustés.
 
-25 montages produits à ce jour.
+27 montages produits à ce jour.
 
 ---
 
@@ -82,6 +82,8 @@ positions une par une ; `monter22.py` assemble ensuite avec un rythme choisi —
 | SolRush duel 852×1920 | `840:1230:6:202` | `816:822:18:525` |
 | SolRush arrivée 568×1280 | `560:865:4:140` | `484:670:44:290` |
 | SolRush arrivée 568×1280, rejeu navigateur | `560:870:4:130` | `496:680:40:280` |
+| SolRush arrivée 1080×2436, rejeu appli | `1060:1600:10:255` | `858:1220:112:592` |
+| SolRush duel 1080×2436, rejeu appli | `1076:1545:2:255` | `1000:1000:42:702` |
 | Rejeu capturé par CDP (860×1864) | `840:1340:10:120` | — |
 
 Toutes se normalisent ensuite par `scale=900:-2,pad=1080:1920:90:100:white`.
